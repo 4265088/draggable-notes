@@ -13,11 +13,11 @@ function App() {
   useEffect(() => {
     const savedNotes = localStorage.getItem('draggableNotes');
     const savedDarkMode = localStorage.getItem('darkMode');
-    
+
     if (savedDarkMode) {
       setDarkMode(JSON.parse(savedDarkMode));
     }
-    
+
     if (savedNotes) {
       setNotes(JSON.parse(savedNotes));
     } else {
@@ -52,19 +52,19 @@ function App() {
     const maxAttempts = 100;
     const containerWidth = containerRef.current?.clientWidth || 800;
     const containerHeight = containerRef.current?.clientHeight || 600;
-    
+
     for (let i = 0; i < maxAttempts; i++) {
       const x = Math.random() * (containerWidth - 250);
       const y = Math.random() * (containerHeight - 100);
-      
+
       const testNote = { position: { x, y } };
       const hasOverlap = notes.some(note => checkOverlap(testNote, note));
-      
+
       if (!hasOverlap) {
         return { x, y };
       }
     }
-    
+
     return { x: 10, y: 10 };
   };
 
@@ -107,24 +107,24 @@ function App() {
     };
 
     return !(note1Rect.right < note2Rect.left ||
-             note1Rect.left > note2Rect.right ||
-             note1Rect.bottom < note2Rect.top ||
-             note1Rect.top > note2Rect.bottom);
+      note1Rect.left > note2Rect.right ||
+      note1Rect.bottom < note2Rect.top ||
+      note1Rect.top > note2Rect.bottom);
   };
 
   const handleMouseDown = (e, note) => {
     if (e.target.closest('.remove-btn')) return;
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'BUTTON') return;
-    
+
     e.preventDefault();
     const noteElement = e.currentTarget;
     const rect = noteElement.getBoundingClientRect();
-    
+
     setDragOffset({
       x: e.clientX - rect.left,
       y: e.clientY - rect.top
     });
-    
+
     setDraggedNote({ ...note, originalPosition: note.position });
   };
 
@@ -151,7 +151,7 @@ function App() {
     if (!draggedNote) return;
 
     const currentNote = notes.find(n => n.id === draggedNote.id);
-    const hasOverlap = notes.some(note => 
+    const hasOverlap = notes.some(note =>
       note.id !== draggedNote.id && checkOverlap(currentNote, note)
     );
 
@@ -206,11 +206,11 @@ function App() {
   return (
     <div className={`app-container ${darkMode ? 'dark-mode' : 'light-mode'}`}>
       <AnimatedBubbles />
-      
+
       <div className="content-wrapper">
         <div className="header">
           <h1 className="title">✨ Draggable Notes</h1>
-          
+
           <button
             onClick={toggleDarkMode}
             className="theme-toggle"
@@ -219,7 +219,7 @@ function App() {
             {darkMode ? <Sun size={24} /> : <Moon size={24} />}
           </button>
         </div>
-        
+
         <div className="input-section">
           <input
             type="text"
