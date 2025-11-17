@@ -24,13 +24,18 @@ function App() {
       const defaultNotes = [
         {
           id: 1,
-          text: '📌 Check the description for my Frontend Interview Prep Course',
-          position: { x: 50, y: 200 }
+          text: '📌 Welcome to Draggable Notes!',
+          position: { x: 60, y: 180 }
         },
         {
           id: 2,
-          text: '📌 Like this Video and Subscribe to Roadside Coder',
-          position: { x: 300, y: 350 }
+          text: '📌 Double-click a note to edit it.',
+          position: { x: 320, y: 320 }
+        },
+        {
+          id: 3,
+          text: '📸 My insta Flash⚡Code',
+          position: { x: 200, y: 80 }
         }
       ];
       setNotes(defaultNotes);
