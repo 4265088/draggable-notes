@@ -1,4 +1,4 @@
-# ✨ Draggable Notes App
+# ✨ Draggable Notes
 
 <div align="center">
 
@@ -49,8 +49,8 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/draggable-notes-app.git
-cd draggable-notes-app
+git clone https://github.com/akashasahu07/draggable-notes.git
+cd draggable-notes
 ```
 
 2. **Install dependencies**
@@ -100,7 +100,7 @@ http://localhost:3000
 ## 📂 Project Structure
 
 ```
-draggable-notes-app/
+draggable-notes/
 ├── public/
 │   ├── index.html
 │   └── favicon.ico
@@ -155,11 +155,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### **Your Name**
 
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/your_instagram)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/flashcode07)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akashasahu07)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/akashasahu07)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/akashasahu07)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ak-poerfolio-web7.vercel.app)
 
 </div>
 
@@ -171,8 +171,8 @@ Give a ⭐️ if you like this project!
 
 Have questions or suggestions? Feel free to reach out!
 
-📧 Email: your.email@example.com  
-📱 Instagram: [@your_instagram](https://instagram.com/your_instagram)
+📧 Email: akashasahu2001@gmail.com 
+📱 Instagram: [@flashcode07](https://instagram.com/flashcode07)
 
 <div align="center">
 
